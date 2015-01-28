@@ -1,0 +1,21 @@
+---
+layout: default
+---
+ <p>Don't judge this site by its "cover". We're going to learn the ins-and-outs of HTML and CSS by starting with this bare-bones structure, and coding our way to this...</p>
+ <div class="image-wrapper">
+    <img src="/assets/images/noob2noob.png" height=500px width=500px/>
+ </div>
+ <p>And that's only the beginning. This site will be constantly evolving as a reflection of our skills. As we progress in our abilities, so shall this site exhibit new features and robust design layouts. Stick around for the ride- it'll be worth it.</p>
+<div class="content">
+  <h1 class="page-heading">Posts</h1>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
