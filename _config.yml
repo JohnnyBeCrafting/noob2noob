@@ -2,7 +2,7 @@
 title: A NOOB'S TAKE ON HTML and CSS
 email: garces.johnny@gmail.com
 description: Breaking down the massive learning curve by explaining things in friendly terms. 
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/noob2noob" # the subpath of your site, e.g. /blog/
 url: "http://localhost:8000" # the base hostname & protocol for your site
 
 
